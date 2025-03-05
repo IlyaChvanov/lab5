@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<title>Добавить книгу</title>
+</head>
+<body>
+<h1>Добавить книгу</h1>
+<form action="#" th:action="@{/insertBook}" method="post">
+	<label>ISBN: <input type="text" name="isbn" /></label><br/>
+	<label>Название: <input type="text" name="title" /></label><br/>
+	<label>Автор: <input type="text" name="author" /></label><br/>
+	<label>Жанр: <input type="text" name="genre" /></label><br/>
+	<label>Год издания: <input type="number" name="year" /></label><br/>
+	<label>Количество экземпляров: <input type="number" name="copies" /></label><br/>
+	<label>Доступность:
+		<select name="availability">
+			<option value="true">Да</option>
+			<option value="false">Нет</option>
+		</select>
+	</label><br/>
+	<button type="submit">Добавить</button>
+</form>
+<a th:href="@{/}">Вернуться на главную</a>
+</body>
+</html>

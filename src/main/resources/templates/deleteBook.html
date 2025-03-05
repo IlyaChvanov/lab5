@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<title>Удалить книгу</title>
+</head>
+<body>
+<h1>Удалить книгу</h1>
+<form action="#" th:action="@{/deleteBook}" method="post">
+	<label>Название книги: <input type="text" name="title" /></label><br/>
+	<button type="submit">Удалить</button>
+</form>
+<a th:href="@{/}">Вернуться на главную</a>
+</body>
+</html>

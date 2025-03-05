@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<title>Library Management System</title>
+</head>
+<body>
+<h1>Главная страница</h1>
+<ul>
+	<li><a th:href="@{/createDatabase}">Создать базу данных</a></li>
+	<li><a th:href="@{/dropDatabase}">Удалить базу данных</a></li>
+	<li><a th:href="@{/clearTable}">Очистить таблицу (по умолчанию Book)</a></li>
+	<li><a th:href="@{/insertBook}">Добавить книгу</a></li>
+	<li><a th:href="@{/updateBook}">Обновить книгу</a></li>
+	<li><a th:href="@{/deleteBook}">Удалить книгу</a></li>
+	<li><a th:href="@{/createUser}">Создать пользователя</a></li>
+</ul>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<title>Обновить книгу</title>
+</head>
+<body>
+<h1>Обновить книгу</h1>
+<form action="#" th:action="@{/updateBook}" method="post">
+	<label>ISBN: <input type="text" name="isbn" /></label><br/>
+	<label>Новое название: <input type="text" name="title" /></label><br/>
+	<label>Новый автор: <input type="text" name="author" /></label><br/>
+	<label>Новый жанр: <input type="text" name="genre" /></label><br/>
+	<label>Новый год издания: <input type="number" name="year" /></label><br/>
+	<label>Новое количество экземпляров: <input type="number" name="copies" /></label><br/>
+	<label>Доступность:
+		<select name="availability">
+			<option value="true">Да</option>
+			<option value="false">Нет</option>
+		</select>
+	</label><br/>
+	<button type="submit">Обновить</button>
+</form>
+<a th:href="@{/}">Вернуться на главную</a>
+</body>
+</html>
