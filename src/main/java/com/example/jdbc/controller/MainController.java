@@ -14,7 +14,7 @@ public class MainController {
 	
 	@GetMapping("/")
 	public String index() {
-		return "index"; // Отображает шаблон index.html
+		return "index";
 	}
 	
 	@GetMapping("/createDatabase")
@@ -52,7 +52,7 @@ public class MainController {
 	
 	@GetMapping("/insertBook")
 	public String insertBookForm() {
-		return "insertBook"; // Форма для добавления книги
+		return "insertBook";
 	}
 	
 	@PostMapping("/insertBook")
@@ -75,7 +75,7 @@ public class MainController {
 	
 	@GetMapping("/updateBook")
 	public String updateBookForm() {
-		return "updateBook"; // Форма для обновления книги
+		return "updateBook";
 	}
 	
 	@PostMapping("/updateBook")
@@ -98,7 +98,7 @@ public class MainController {
 	
 	@GetMapping("/deleteBook")
 	public String deleteBookForm() {
-		return "deleteBook"; // Форма для удаления книги
+		return "deleteBook";
 	}
 	
 	@PostMapping("/deleteBook")
@@ -114,7 +114,7 @@ public class MainController {
 	
 	@GetMapping("/createUser")
 	public String createUserForm() {
-		return "createUser"; // Форма для создания пользователя
+		return "createUser";
 	}
 	
 	@PostMapping("/createUser")
